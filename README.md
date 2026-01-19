@@ -175,13 +175,60 @@ This avoids file duplication and guarantees atomic updates.
 
 ---
 
-## 🔄 Possible Extensions
+## 🔮 Future Enhancements
 
-- Replace CSV with a relational database (MySQL/PostgreSQL)
-- Generate PDF instead of image
-- Add WhatsApp or Slack notifications
-- Introduce role-based access for form submissions
-- Add validation and error alerting workflows
+The current implementation provides a reliable automation pipeline for trip data handling.  
+The following enhancements can further improve scalability, security, and production readiness:
+
+### 1. Database-Backed Storage
+- Replace CSV-based storage with a relational database (PostgreSQL/MySQL)
+- Enable concurrent writes, indexing, and complex queries
+- Improve long-term scalability and data integrity
+
+### 2. PDF-Based Duty Slip Generation
+- Generate duty slips directly as PDFs instead of images
+- Support printing, digital signing, and archival compliance
+- Improve document portability and professional presentation
+
+### 3. Role-Based Access Control (RBAC)
+- Introduce authentication and authorization layers
+- Define roles such as Admin, Operations, and Finance
+- Restrict workflow access based on user roles
+
+### 4. Multi-Channel Notifications
+- Extend delivery channels beyond email
+- Integrate WhatsApp Business API, Slack, or SMS gateways
+- Improve real-time communication with stakeholders
+
+### 5. Centralized Error Handling & Monitoring
+- Add workflow-level error handlers and retry mechanisms
+- Integrate logging and alerting for failures
+- Improve observability and operational reliability
+
+### 6. Workflow Versioning & Rollbacks
+- Store workflow versions in Git automatically
+- Enable rollback to previous stable versions
+- Improve deployment safety and traceability
+
+### 7. Input Validation & Data Sanitization
+- Validate form inputs such as timestamps, vehicle numbers, and distances
+- Prevent malformed or inconsistent data entry
+- Ensure clean downstream processing
+
+### 8. Analytics & Reporting Dashboard
+- Build dashboards for trip statistics and vehicle utilization
+- Enable business insights through aggregated metrics
+- Support decision-making for operations and finance teams
+
+### 9. Cloud-Native Deployment
+- Deploy n8n on cloud platforms (AWS/GCP/Azure)
+- Use managed databases, object storage, and secrets managers
+- Improve availability, security, and scalability
+
+### 10. AI-Assisted Automation
+- Introduce AI for trip summarization and anomaly detection
+- Predict high-usage vehicles or driver fatigue risks
+- Enhance automation intelligence using ML models
 
 ---
 
