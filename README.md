@@ -264,7 +264,7 @@ Computer Science Student
 Golang • Python • FastAPI • n8n & AI Automation • RESTful APIs • Microservices • Cloud Computing • Generative AI
 
 - GitHub: https://github.com/hrishabpachange
-- LinkedIn: https://www.linkedin.com/in/hrishab-pachange/
+- LinkedIn: www.linkedin.com/in/hrishab-pachange-1667702b1
 
 > © 2026 Hrishab Pachange. All rights reserved.
 
