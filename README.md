@@ -94,9 +94,13 @@ This avoids file duplication and guarantees atomic updates.
 ---
 
 ## 📂 Repository Structure
-
-
-Both pipelines run **in parallel** from a single form submission.
+```
+├── trips-data-automation.json # Exported n8n workflow
+├── README.md # Project documentation
+├── .gitignore # Excludes secrets and runtime files
+└── docs/
+└── architecture.png # (Optional) workflow diagram
+```
 
 ---
 
@@ -138,31 +142,6 @@ This avoids file duplication and guarantees atomic updates.
 - Authenticated via Gmail App Password
 - Sends multipart MIME email with binary attachment
 - Works independently of Gmail OAuth limitations
-
----
-
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|--------|------------|
-| Workflow engine | n8n (Docker) |
-| Backend runtime | Node.js (inside n8n) |
-| Storage | Google Drive (CSV) |
-| Rendering | Headless Chromium (HTML → Image) |
-| Email | SMTP (Gmail App Password) |
-| Data formats | JSON, CSV, Base64 |
-| Authentication | OAuth 2.0 (Drive), SMTP auth |
-
----
-
-## 📂 Repository Structure
-```
-├── trips-data-automation.json # Exported n8n workflow
-├── README.md # Project documentation
-├── .gitignore # Excludes secrets and runtime files
-└── docs/
-└── architecture.png # (Optional) workflow diagram
-```
 
 ---
 
