@@ -97,8 +97,7 @@ This avoids file duplication and guarantees atomic updates.
 ```
 ├── trips-data-automation.json # Exported n8n workflow
 ├── README.md # Project documentation
-├── .gitignore # Excludes secrets and runtime files
-└── docs/
+└── .gitignore # Excludes secrets and runtime files
 ```
 
 ---
