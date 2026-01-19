@@ -99,7 +99,6 @@ This avoids file duplication and guarantees atomic updates.
 ├── README.md # Project documentation
 ├── .gitignore # Excludes secrets and runtime files
 └── docs/
-└── architecture.png # (Optional) workflow diagram
 ```
 
 ---
