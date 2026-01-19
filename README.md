@@ -253,7 +253,6 @@ For permissions or inquiries, contact the author directly.
 ---
 > Designed and implemented as part of a real-world automation use case.
 ---
----
 
 ## 👤 Author
 
