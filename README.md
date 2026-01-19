@@ -1,4 +1,4 @@
-# n8n Trips Data Automation
+#📊 n8n Trips Data Automation
 
 An end-to-end **workflow automation system** built using **n8n** to streamline trip data management for a tourism / car rental business.  
 The system automates trip data collection, centralized record keeping, duty slip generation, and email delivery — with zero manual intervention after setup.
