@@ -1,0 +1,18 @@
+# Secrets
+.env
+.env.*
+*.key
+*.secret
+
+# n8n internal data
+.n8n/
+credentials/
+binary-data/
+
+# Node / logs
+node_modules/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
