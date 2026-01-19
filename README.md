@@ -21,27 +21,6 @@ The solution ensures **data consistency**, **auditability**, and **operational e
 
 ## 🧠 Architecture Summary
 
-An end-to-end **workflow automation system** built using **n8n** to streamline trip data management for a tourism / car rental business.  
-The system automates trip data collection, centralized record keeping, duty slip generation, and email delivery — with zero manual intervention after setup.
-
----
-
-## 🚀 Project Overview
-
-This project implements a **server-side automation pipeline** that:
-
-1. Accepts trip details via an n8n-hosted form  
-2. Appends each trip as a new row into an existing CSV file stored on Google Drive  
-3. Dynamically generates a duty slip using HTML templating  
-4. Converts the HTML into an image using a headless rendering engine  
-5. Sends the generated duty slip as an email attachment using SMTP  
-
-The solution ensures **data consistency**, **auditability**, and **operational efficiency**.
-
----
-
-## 🧠 Architecture Summary
-
 ```Form Submission (HTTP Trigger)
 │
 ├── CSV Pipeline
