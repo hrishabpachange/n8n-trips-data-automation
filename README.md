@@ -249,3 +249,23 @@ No permission is granted to:
 Any misuse may result in legal action.
 
 For permissions or inquiries, contact the author directly.
+
+---
+> Designed and implemented as part of a real-world automation use case.
+---
+---
+
+## 👤 Author
+
+**Hrishab Pachange**  
+AI/ML Engineer Intern & Backend Developer Intern at Plainsurf Solutions  
+Computer Science Student  
+
+**Technical Focus:**  
+Golang • Python • FastAPI • n8n & AI Automation • RESTful APIs • Microservices • Cloud Computing • Generative AI
+
+- GitHub: https://github.com/hrishabpachange
+- LinkedIn: https://www.linkedin.com/in/hrishab-pachange/
+
+> © 2026 Hrishab Pachange. All rights reserved.
+
