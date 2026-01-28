@@ -99,48 +99,6 @@ This avoids file duplication and guarantees atomic updates.
 ├── README.md # Project documentation
 └── .gitignore # Excludes secrets and runtime files
 ```
-
----
-
-## 🔧 Technical Implementation Details
-
-### 1. Data Ingestion
-- Uses **n8n “On Form Submission” trigger**
-- Emits structured JSON containing trip details
-- Acts as the single source of truth for downstream nodes
-
-### 2. Persistent CSV Storage (Google Drive)
-- Uses **Google Drive API v3**
-- Downloads an existing `trips.csv` file by File ID
-- Ensures all trip records are stored in one continuously growing file
-
-### 3. CSV Append Logic
-- Implemented using a **JavaScript Function node**
-- Responsibilities:
-  - Decode Base64 CSV content to UTF-8
-  - Validate or create CSV headers
-  - Escape values safely (quotes, commas)
-  - Append a new row
-  - Re-encode CSV to Base64 for upload
-
-This avoids file duplication and guarantees atomic updates.
-
-### 4. Duty Slip Generation
-- Uses an **HTML template** with dynamic placeholders
-- n8n expression engine (`{{$json[...]}}`) injects runtime values
-- Template mirrors a real-world duty slip layout
-
-### 5. HTML to Image Rendering
-- Uses a Chromium-based headless renderer
-- Converts styled HTML + CSS into a PNG image
-- Ensures consistent visual output across executions
-
-### 6. Email Delivery
-- Uses **SMTP Email Send node**
-- Authenticated via Gmail App Password
-- Sends multipart MIME email with binary attachment
-- Works independently of Gmail OAuth limitations
-
 ---
 
 ## 🔐 Security Considerations
